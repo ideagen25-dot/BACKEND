@@ -7,7 +7,7 @@ from flask_cors import CORS
 from pymongo import MongoClient
 from bson import ObjectId
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 # --- MONGODB CONNECTION ---
@@ -190,5 +190,6 @@ def handle_feedback():
 # Initialize DB on start
 init_db()
 
-if _name_ == '_main_':
+if _name_ == '__main__':
     app.run(debug=True, port=5000)
+
