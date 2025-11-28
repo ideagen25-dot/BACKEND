@@ -1,6 +1,6 @@
 Flask
-Flask-SQLAlchemy
 Flask-Cors
-werkzeug
+pymongo
+dnspython
 gunicorn
-psycopg2-binary
+werkzeug
